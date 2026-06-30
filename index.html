@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
- 
+
   :root {
     --navy:     #0f2340;
     --navy-mid: #1a3556;
@@ -32,7 +32,7 @@
     --font:     'DM Sans', sans-serif;
     --mono:     'DM Mono', monospace;
   }
- 
+
   body {
     font-family: var(--font);
     background: var(--cream);
@@ -40,7 +40,7 @@
     font-size: 14px;
     line-height: 1.5;
   }
- 
+
   /* ── HEADER ── */
   header {
     background: var(--navy);
@@ -84,17 +84,17 @@
     opacity: .5;
     font-family: var(--mono);
   }
- 
+
   /* ── LAYOUT ── */
   .main { max-width: 1160px; margin: 0 auto; padding: 32px 24px 48px; }
   .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
   .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
   .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
   .span-2 { grid-column: span 2; }
- 
+
   section + section, .grid-2 + section, section + .grid-4, .grid-4 + section,
   .grid-2 + .grid-2, .grid-3 + section { margin-top: 24px; }
- 
+
   /* ── CARDS ── */
   .card {
     background: var(--paper);
@@ -112,7 +112,7 @@
     padding-bottom: 10px;
     border-bottom: 1px solid var(--rule);
   }
- 
+
   /* ── METRIC CARDS ── */
   .metric-card {
     background: var(--paper);
@@ -144,7 +144,7 @@
   .metric-card.accent-amber { border-left: 4px solid var(--amber); }
   .metric-card.accent-blue  { border-left: 4px solid var(--blue); }
   .metric-card.accent-red   { border-left: 4px solid var(--red); }
- 
+
   /* ── PROGRESS BAR ── */
   .progress-section {
     background: var(--paper);
@@ -193,7 +193,7 @@
     color: var(--muted);
     font-family: var(--mono);
   }
- 
+
   /* ── PROFILE ── */
   .profile-grid {
     display: grid;
@@ -223,7 +223,7 @@
   }
   a { color: var(--blue); text-decoration: none; }
   a:hover { text-decoration: underline; }
- 
+
   /* ── TIMELINE ── */
   .timeline { display: flex; flex-direction: column; gap: 0; }
   .tl-item {
@@ -262,7 +262,7 @@
   .badge-blue   { background: var(--blue-bg);   color: var(--blue); }
   .badge-gray   { background: var(--gray-bg);   color: var(--gray); }
   .badge-red    { background: var(--red-bg);    color: var(--red); }
- 
+
   /* ── CHECKLIST ── */
   .check-group + .check-group { margin-top: 16px; }
   .check-group-title {
@@ -298,7 +298,7 @@
     color: var(--muted);
     white-space: nowrap;
   }
- 
+
   /* ── HOURS ── */
   .hour-item { margin-bottom: 14px; }
   .hour-item:last-child { margin-bottom: 0; }
@@ -320,7 +320,7 @@
   .fill-blue  { background: var(--blue); }
   .fill-green { background: var(--green); }
   .fill-amber { background: #f59e0b; }
- 
+
   /* ── ACTION ITEMS ── */
   .action-item {
     display: flex;
@@ -340,7 +340,7 @@
   .action-title { font-size: 13px; font-weight: 600; }
   .action-detail { font-size: 12px; color: var(--muted); margin-top: 2px; }
   .action-due { font-family: var(--mono); font-size: 11px; color: var(--muted); margin-top: 3px; }
- 
+
   /* ── FOOTER ── */
   footer {
     background: var(--navy);
@@ -355,7 +355,7 @@
     font-family: var(--mono);
   }
   footer strong { color: rgba(255,255,255,.9); }
- 
+
   /* ── PRINT ── */
   @media print {
     body { background: #fff; }
@@ -365,7 +365,7 @@
     .main { padding: 16px; }
     .card, .metric-card, .progress-section { break-inside: avoid; }
   }
- 
+
   /* ── RESPONSIVE ── */
   @media (max-width: 760px) {
     header { padding: 20px; flex-direction: column; }
@@ -379,7 +379,7 @@
 </style>
 </head>
 <body>
- 
+
 <!-- ══ HEADER ══ -->
 <header>
   <div class="header-left">
@@ -394,9 +394,9 @@
     <div class="updated">Last updated: June 30, 2026</div>
   </div>
 </header>
- 
+
 <div class="main">
- 
+
   <!-- ══ METRIC CARDS ══ -->
   <div class="grid-4">
     <div class="metric-card accent-blue">
@@ -420,7 +420,7 @@
       <div class="metric-sub">$1,000 via Venmo · Jun 29, 2026</div>
     </div>
   </div>
- 
+
   <!-- ══ PROGRESS BAR ══ -->
   <div class="progress-section">
     <div class="progress-header">
@@ -436,10 +436,10 @@
       <span>End: Nov 10, 2026</span>
     </div>
   </div>
- 
+
   <!-- ══ PROFILE + TIMELINE ══ -->
   <div class="grid-2" style="margin-top:24px;">
- 
+
     <!-- PROFILE CARD -->
     <div class="card">
       <div class="card-title">Resident Profile</div>
@@ -524,9 +524,13 @@
           <span class="profile-key">School District</span>
           <span class="profile-val">Private Schools – Camden County</span>
         </div>
+        <div class="profile-row span-2" style="grid-column:span 2;">
+          <span class="profile-key">Meeting Log &amp; Tracker</span>
+          <span class="profile-val"><a href="https://docs.google.com/spreadsheets/d/1YHQJefmnBbV_YzVLKf59YTKwbanmj_jpF-WlH4L_fyk/edit?gid=97045161#gid=97045161" target="_blank">NJL2L_Stacie_Halscheid_2024–2026 ↗</a></span>
+        </div>
       </div>
     </div>
- 
+
     <!-- MILESTONE TIMELINE -->
     <div class="card">
       <div class="card-title">Milestone Timeline</div>
@@ -622,14 +626,14 @@
       </div>
     </div>
   </div>
- 
+
   <!-- ══ DOCUMENT CHECKLIST + HOURS ══ -->
   <div class="grid-2">
- 
+
     <!-- DOCUMENT CHECKLIST -->
     <div class="card">
       <div class="card-title">Document Checklist</div>
- 
+
       <div class="check-group">
         <div class="check-group-title">Primary &amp; Secondary Documents</div>
         <div class="check-item">
@@ -678,7 +682,7 @@
           <span class="check-date">2024-12-06</span>
         </div>
       </div>
- 
+
       <div class="check-group">
         <div class="check-group-title">Orientation &amp; Attendance</div>
         <div class="check-item">
@@ -702,7 +706,7 @@
           <span class="check-date">2025-02-25</span>
         </div>
       </div>
- 
+
       <div class="check-group">
         <div class="check-group-title">Evaluations</div>
         <div class="check-item">
@@ -737,10 +741,10 @@
         </div>
       </div>
     </div>
- 
+
     <!-- HOURS + ACTIONS -->
     <div style="display:flex;flex-direction:column;gap:20px;">
- 
+
       <!-- HOUR TRACKER -->
       <div class="card">
         <div class="card-title">Hour Requirements Tracker (Estimated)</div>
@@ -776,7 +780,7 @@
           * Hour totals are estimated from program month (19/24). Verify exact hours via NJPSA portal.
         </p>
       </div>
- 
+
       <!-- IMMEDIATE ACTION ITEMS -->
       <div class="card">
         <div class="card-title">Immediate Action Items</div>
@@ -835,12 +839,12 @@
           <span class="tl-badge badge-gray">Ongoing</span>
         </div>
       </div>
- 
+
     </div>
   </div>
- 
+
 </div><!-- /main -->
- 
+
 <!-- ══ FOOTER ══ -->
 <footer>
   <div>
@@ -850,6 +854,6 @@
     Mentor: <strong>Jermaine Kamau</strong> &nbsp;·&nbsp; Updated June 30, 2026
   </div>
 </footer>
- 
+
 </body>
 </html>
